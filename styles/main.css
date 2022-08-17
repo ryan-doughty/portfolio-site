@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css');
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #35332A;
+    background-color: #EFEFEF;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0 0 10px;
+}
+
+a:link,
+a:visited {
+    text-decoration: none;
+    color: rgba(237, 106, 90, 1);
+    transition: all 500ms;
+}
+
+a:hover,
+a:active {
+    opacity: .75;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.8;
+    letter-spacing: 1px;
+    margin: 0 0 10px;
+}
+
+section {
+    position: relative;
+    display: block;
+    padding: 10px;
+}
+
+.row {
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+}
+
+@media all and (min-width: 767px) {
+    .row {
+        flex-direction: row;
+    }
+}
+
+.column {
+    width: 100%;
+}
+
+@media all and (min-width: 767px) {
+    .two-columns {
+        width: calc(50% - 1rem);
+    }
+}
+
+@media all and (min-width: 767px) {
+    .three-columns {
+        width: calc(33.33333% - 1rem);
+    }
+}
+
+.red-background {
+    background-color: rgba(237, 106, 90, 1);
+    color: #fff;
+}
+
+/* Banner Section Styles */
+.banner {
+    text-align: center;
+    color: #333;
+    border-bottom: 2px solid #333;
+}
+
+.banner h1 {
+    font-size: 42px;
+}
+
+@media all and (min-width: 767px) {
+    .banner h1 {
+        font-size: 48px;
+    }
+}
+
+/* About section */
+@media all and (min-width: 767px) {
+    .about .row {
+        justify-content: center;
+    }
+}
+
+.about h2 {
+    text-align: center;
+}
+
+@media all and (min-width: 767px) {
+    .about h2 {
+        text-align: left;
+    } 
+}
+
+.profile-picture-container {
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.profile-picture-container img {
+    border-radius: 50%;
+    width: 80%;
+}
+
+@media all and (min-width: 767px) {
+    .profile-picture-container img {
+        width: 50%;
+    }
+}
+
+/* Skills */
+.skills h2 {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.skills .row:nth-of-type(2) {
+    align-items: flex-start;
+    overflow: hidden;
+}
+
+.skills .row:nth-of-type(2) .column {
+    padding: 1rem;
+    align-self: stretch;
+}
+
+.skills ul {
+    list-style: none;
+    padding: 0;;
+}
+
+/* Site Gallery */
+.site-gallery {
+    border-bottom: 2px solid #333;
+}
+.site-gallery .row {
+    overflow: hidden;
+}
+
+.site-gallery .row:first-child {
+    flex-direction: column;
+}
+
+.site-gallery .row:first-child h2,
+.site-gallery .row:first-child p {
+    margin: 0px 0px 10px;
+}
+
+.site-gallery .row .column a {
+    display: inline-block;
+    transition: all 500ms;
+}
+
+.site-gallery .row .column a:hover {
+    cursor: pointer;
+    transform: scale(.95);
+}
+
+.site-gallery h2,
+.site-gallery h3,
+.site-gallery p {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.site-gallery img {
+    width: 100%;
+    display: inline-block;
+}
+
+/* Footer */
+footer .row {
+    justify-content: center;
+}
+footer ul {
+    display: inline-block;
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline-block;
+    margin-right: 1rem;
+    padding: 0;
+}
+
+footer ul li a .fa-facebook-square {
+    color: rgba(56, 88, 152, 1);
+}
+
+footer ul li a .fa-linkedin {
+    color: rgba(10, 102, 194, 1);
+}
+
+/* Animations */
+.fade-in {
+    animation: fadeIn 1s;
+    animation-fill-mode: forwards;
+    -webkit-animation: fadeIn 1s;
+    -moz-animation: fadeIn 1s;
+    -o-animation: fadeIn 1s;
+    -ms-animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-o-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+.slide-down {
+    animation: slideDown 1s;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation: slideDown 1s;
+    -moz-animation: slideDown 1s;
+    -o-animation: slideDown 1s;
+    -ms-animation: slideDown 1s;
+}
+
+@keyframes slideDown {
+    0% { opacity: 0; transform: translateY(-100%); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+@-moz-keyframes slideDown {
+    0% { opacity: 0; transform: translateY(-100%); }
+    100% { opacity: 1; transform: translateY(10); }
+}
+
+@-webkit-keyframes slideDown {
+    0% { opacity: 0; transform: translateY(-100%); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+@-o-keyframes slideDown {
+    0% { opacity: 0; transform: translateY(-100%); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+@-ms-keyframes slideDown {
+    0% { opacity: 0; transform: translateY(-100%); }
+    100% { opacity: 1; transform: translateY(0); }
+}

@@ -144,6 +144,10 @@ section {
     align-self: stretch;
 }
 
+.skills h3 {
+    text-transform: uppercase;
+}
+
 .skills ul {
     list-style: none;
     padding: 0;;
